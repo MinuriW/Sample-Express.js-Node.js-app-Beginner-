@@ -15,6 +15,5 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
-  },
-  "Start": " cross-env-shell DEBUG=True HOST=dev.example.com gulp server"
+  }
 }
