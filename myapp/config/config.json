@@ -1,11 +1,11 @@
-module.exports = {
+{
   "development": {
-    "username": "express-mvp-dbuser",
+    "username": "postgres",
     "password": "121555",
     "database": "express-mvp-db",
     "host": "127.0.0.1",
-    "dialect": "mysql",
-    "port": 5432
+    "dialect": "postgres",
+    "port" : 5432
   },
   "test": {
     "username": "root",
