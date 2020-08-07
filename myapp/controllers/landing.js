@@ -36,18 +36,15 @@ exports.show_edit_lead = function(req, res, next) {
     });
 }
 exports.edit_lead = function(req, res, next) {
-    // req.params.lead_id
-    // req.params.lead_email
 
     return models.Lead.update({
         email: req.body.lead_email
-    },{
+    }, {
         where: {
             id: req.params.lead_id
         }
     }).then(result => {
-        res.redirect('/lead' + req.params.lead_id);
+        res.redirect('/lead/' + req.params.lead_id);
     })
 }
-
 
